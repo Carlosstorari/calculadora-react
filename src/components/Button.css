@@ -1,0 +1,38 @@
+:root {
+    --bg-button: #f0f0f0;
+    --border-button: solid 1px #888;
+}
+
+.button {
+    font-size: 1.4em;
+    background-color: var(--bg-button);
+    border: none;
+    border-right: var(--border-button);
+    border-bottom: var(--border-button);
+    outline: none;
+    box-shadow: none;
+}
+.button:focus span,.button::-moz-focus-inner{
+    outline: none;
+    outline: 0;
+}
+.button:active{/*quando o botão for clicado*/
+    background-color: #ccc;
+}
+
+.button.double {/*Botão que ocupa 2 posições*/
+    grid-column: span 2;
+}
+
+.button.triple {/*botão que ocupa 3 posições*/
+    grid-column: span 3;
+}
+
+.button.operation{
+    background-color: #fa8231;
+    color: #FFF
+}
+
+.button.operation:active{
+    background-color: #fa8231cc;
+}
